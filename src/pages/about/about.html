@@ -8,4 +8,30 @@
 
 <ion-content padding>
 
+  <ion-slides pager>
+    <ion-slide>
+      <ion-card>
+        <ion-card-header>New Talk</ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-label floating>Talk title</ion-label>
+            <ion-input type="text"></ion-input>
+         </ion-item>
+
+         <button ion-button="">Guardar </button>
+
+          <ion-item>
+            <ion-label stacked color="primary">Data</ion-label>
+            <ion-datetime></ion-datetime>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-slide>
+    <ion-slide>
+      <ion-list inset>
+        <p>1</p>
+        <p>2</p>
+      </ion-list>
+    </ion-slide>
+  </ion-slides>
 </ion-content>
