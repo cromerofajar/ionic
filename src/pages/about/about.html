@@ -20,16 +20,15 @@
         <ion-card-content>
           <ion-item>
             <ion-label floating>Talk title</ion-label>
-            <ion-input type="text"></ion-input>
+            <ion-input type="text" #title></ion-input>
          </ion-item>
-
-
 
           <ion-item>
             <ion-label stacked color="primary">Data</ion-label>
-            <ion-datetime></ion-datetime>
+            <ion-datetime #date></ion-datetime>
           </ion-item>
-          <button ion-button="">Guardar </button>
+
+          <button ion-button="" (click)="guardar(title.value,date.value)">Guardar </button>
         </ion-card-content>
       </ion-card>
     </ion-slide>

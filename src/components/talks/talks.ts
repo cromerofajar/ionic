@@ -20,5 +20,4 @@ export class TalksComponent {
   getAllTakls(){
     return this.http.get('http://www.mocky.io/v2/5e73a70e300000fd9b2e6766').subscribe(result =>{this.talks = result;})
   }
-
 }
