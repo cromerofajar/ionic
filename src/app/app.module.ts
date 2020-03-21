@@ -14,6 +14,7 @@ import {ComponentsModule} from "../components/components.module";
 import { TalksProvider } from '../providers/talks/talks';
 import {HttpClientModule} from "@angular/common/http";
 import {SuccessPage} from "../pages/success/success";
+import {IonicStorageModule} from "@ionic/storage";
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import {SuccessPage} from "../pages/success/success";
   ],
     imports: [
         BrowserModule,
+        IonicStorageModule.forRoot(),
         IonicModule.forRoot(MyApp),
         ComponentsModule,
         HttpClientModule
