@@ -5,7 +5,9 @@ import { HttpClient } from '@angular/common/http';
   selector: 'talks',
   template: `
     <ion-list inset>
-      <p *ngFor="let talk of talks">{{talk.title}}</p>
+      <p *ngFor="let talk of talks">
+        <ion-icon name="beer"></ion-icon>
+        {{talk.title}}</p>
     </ion-list>
 `
 })
