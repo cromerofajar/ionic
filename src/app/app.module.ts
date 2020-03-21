@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {ComponentsModule} from "../components/components.module";
 import { TalksProvider } from '../providers/talks/talks';
 import {HttpClientModule} from "@angular/common/http";
+import {SuccessPage} from "../pages/success/success";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {HttpClientModule} from "@angular/common/http";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    SuccessPage
   ],
     imports: [
         BrowserModule,
@@ -35,7 +37,8 @@ import {HttpClientModule} from "@angular/common/http";
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    SuccessPage
   ],
   providers: [
     StatusBar,
